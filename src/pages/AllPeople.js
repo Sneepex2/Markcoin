@@ -10,7 +10,7 @@ function AllPeople() {
     document.title = 'All People';
     setIsLoading(true);
     axios
-      .get('http://markcoin.eu-west-3.elasticbeanstalk.com/user')
+      .get('https://s6w0nputvi.execute-api.eu-west-3.amazonaws.com/user')
       .then((res) => {
         return res.data;
       })
